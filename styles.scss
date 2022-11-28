@@ -127,9 +127,14 @@ main{
         &:hover{
         cursor: pointer;
         background-color: $Orange;
-        transition: .4s;
+        transition: .3s;
         border: 15px solid $Orange;
         color: $White;
+        }
+        &:focus{
+            background-color: $MediumGrey;
+            border: 15px solid $MediumGrey;
+            color: $White;
         }
 }
 
@@ -149,7 +154,7 @@ main{
         color: $White;
         &:hover{
             cursor: pointer;
-            transition: .4s;
+            transition: .3s;
             background-color: $White;
             color: $Orange;
         }

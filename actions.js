@@ -1,6 +1,9 @@
 const mainContainer = document.querySelector(".main")
+const card1 = document.querySelector(".card-1")
 const card2 = document.querySelector(".card-2")
-
+const submitButton = document.getElementById("submit")
+const rating = document.getElementById("rating")
+const rate = document.querySelectorAll("btn")
 
 function handleClick (){
     console.log("it works")
@@ -9,6 +12,21 @@ function handleClick (){
     
 }
 
+submitButton.addEventListener("click", () => {
+    card2.classList.remove("hidden")
+    card1.style.display = "none"
+})
+
+
+
+
+/*
+rates.forEach((rate) =>{
+    rate.addEventListener("click", () =>{
+        console.log("rate.innerHTML")
+    })
+})
+*/
 
 /*
 function btnClick (){
