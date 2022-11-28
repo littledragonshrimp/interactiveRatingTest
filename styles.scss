@@ -1,0 +1,215 @@
+//color map
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$DarkestBlue: hsl(216, 12%, 8%);
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: $DarkestBlue;
+    color: white;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+#popUp{
+    display: none;
+    &.visible{
+        display: unset;
+        width: 100%;
+        background-color: $DarkBlue;
+    }
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+
+    width: 400px;
+    max-width: 25%;
+    min-width: 400px;
+    min-height: 380px;
+    background-color: hsl(213, 19%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px 15px;
+ 
+}
+.card-1{
+    align-items: center;
+    align-content: center;
+    &.hide{
+        display: none;
+    }
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    border: 15px solid $DarkBlue;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.title {
+    color: $White;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 0%;
+}
+
+.para{
+    line-height: 2em;
+    margin-left: 4%;
+    margin-right: 4%;
+    word-spacing: .1em;
+    font-size: 15px;
+}
+
+//  .attribution { 
+//    font-size: 11px;
+//    text-align: center; 
+//    margin-top: 30%;
+//    margin-right: auto;
+//    margin-left: 85%;
+//}
+//  .attribution a { 
+//    color: hsl(228, 45%, 44%); 
+//}
+//
+//.attribution p{
+//    display: flex;
+//    flex-direction: column;
+//    color: hsl(217, 12%, 63%);
+//  
+//}
+//
+.btn-group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+}
+
+.btn {
+    
+    color: $MediumGrey;
+    border: 15px solid $DarkBlue;
+    background-color: $DarkBlue;
+    border-radius: 25px;
+    text-decoration: none;
+        &:hover{
+        cursor: pointer;
+        background-color: $Orange;
+        transition: .4s;
+        border: 15px solid $Orange;
+        color: $White;
+        }
+}
+
+.submit{
+        font-family: "Overpass", sans-serif;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 4%;
+        border-style: none;
+        border-radius: 25px;
+        padding: 15px 150px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-weight: 500;
+    
+        background-color: $Orange;
+        color: $White;
+        &:hover{
+            cursor: pointer;
+            transition: .4s;
+            background-color: $White;
+            color: $Orange;
+        }
+}
+
+/*
+li{
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+}
+
+ul{
+    display: inline;
+    background:hsl(216, 12%, 54%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+}
+*/
+
+.thanks-img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.selected{
+    background-color: $DarkBlue;
+    color: $Orange;
+    border-radius: 25px;
+    margin-left: 28%;
+   margin-right: 28%;
+   text-align: center;
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
+
+//Start card-2 details
+
+.card-2 {
+    display: hidden;
+}
+
+.card-2-title{
+    text-align: center;
+}
+
+.para-2{
+    color: $LightGrey;
+    text-align: center;
+    font-size: 16px;
+    margin: 4%;
+    line-height: 1.5em;
+}
+
+.attribution{
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+}
