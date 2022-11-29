@@ -3,7 +3,7 @@ const card1 = document.querySelector(".card-1")
 const card2 = document.querySelector(".card-2")
 const submitButton = document.getElementById("submit")
 const rating = document.getElementById("rating")
-const rate = document.querySelectorAll("btn")
+const rates = document.querySelectorAll(".btn")
 
 function handleClick (){
     console.log("it works")
@@ -18,7 +18,11 @@ submitButton.addEventListener("click", () => {
 })
 
 
-
+rates.forEach((rate) => {
+    rate.addEventListener("click", () => {
+        rating.innerHTML = rate.innerHTML
+    })
+})
 
 /*
 rates.forEach((rate) =>{

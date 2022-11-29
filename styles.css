@@ -107,6 +107,7 @@ main {
   background-color: hsl(216deg, 12%, 54%);
   border: 15px solid hsl(216deg, 12%, 54%);
   color: hsl(0deg, 0%, 100%);
+  transition: 0.3s;
 }
 
 .submit {
@@ -181,7 +182,11 @@ ul{
 }
 
 .attribution {
-  display: flex;
-  align-items: flex-end;
-  justify-self: flex-end;
+  margin-top: 6em;
+  text-align: center;
+  font-size: 8px;
+  color: hsl(217deg, 12%, 63%);
+}
+.attribution a {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

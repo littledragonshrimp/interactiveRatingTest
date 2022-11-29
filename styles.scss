@@ -135,6 +135,7 @@ main{
             background-color: $MediumGrey;
             border: 15px solid $MediumGrey;
             color: $White;
+            transition: .3s;
         }
 }
 
@@ -214,7 +215,11 @@ ul{
 }
 
 .attribution{
-    display: flex;
-    align-items: flex-end;
-    justify-self: flex-end;
+    margin-top: 6em;
+    text-align: center;
+    font-size: 8px;
+    color: $LightGrey;
+    a{
+        color: red;
+    }
 }
